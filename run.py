@@ -21,9 +21,9 @@ if __name__ == '__main__':
     data_list, user_set, item_set = load_data_from_dir(f_dir)
     shuffle(data_list)
 
-    # train_ratio = 0.8
-    # split_idx = int(len(data_list) * train_ratio)
-    split_idx = 2396
+    train_ratio = 0.8
+    split_idx = int(len(data_list) * train_ratio)
+    # split_idx = 2397
     tr_data = data_list[:split_idx]
     te_data = data_list[split_idx:]
 
